@@ -1,0 +1,1 @@
+# vertical-image-accordion
