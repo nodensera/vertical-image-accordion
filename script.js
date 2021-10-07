@@ -1,15 +1,14 @@
-const accordionItem = document.querySelectorAll('.vertical-accordion-item')
+const accordionItems = document.querySelectorAll('.vertical-accordion-item')
 
-accordionItem.forEach(accordionItem => {
-    accordionItem.addEventListener('click', () => {
-        delAccordionActive()
-        accordionItem.classList.add('accordion-active')
+accordionItems.forEach(accordionItems => {
+    accordionItems.addEventListener('click', () => {
+        removeAccordionActive()
+        accordionItems.classList.add('accordion-active')
     })
 })
 
-function delAccordionActive() {
-    accordionItem.forEach(accordionItem => {
-        accordionItem.classList.remove('accordion-active')
+function removeAccordionActive() {
+    accordionItems.forEach(accordionItems => {
+        accordionItems.classList.remove('accordion-active')
     })
 }
-
