@@ -24,33 +24,35 @@ h1, h4 {
     overflow: hidden;
 }
 
-.vertical-accordion-item {
+.vertical-img {
     height: 70vh;
     position: relative;
     flex: 0.3;
     cursor: pointer;
+    opacity: .8;
     transition: 600ms ease-in-out;
 }
 
-.vertical-accordion-item:first-child {
+.vertical-img:first-child {
     border-radius: 15px 0 0 15px;
 }
 
-.vertical-accordion-item:last-child {
+.vertical-img:last-child {
     border-radius: 0 15px 15px 0;
 }
 
-.vertical-accordion-item {
+.vertical-img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.accordion-active {
+.vertical-active {
     flex: 6;
+    opacity: 1;
 }
 
-.vertical-accordion-item h3 {
+.vertical-img h3 {
     color: #fff;
     position: absolute;
     top: 3rem;
@@ -60,7 +62,7 @@ h1, h4 {
     transition-delay: 130ms;
 }
 
-.accordion-active h3 {
+.vertical-active h3 {
     top: 1rem;
     font-size: 2rem;
     transform: rotate(0deg);
@@ -69,30 +71,30 @@ h1, h4 {
 }
 
 @media (max-width: 480px) {
-    .accordion-active h3 {
+    .vertical-active h3 {
         font-size: 1.5rem !important;
     }
 
-    .vertical-accordion-item h3 {
+    .vertical-img h3 {
         right: -.9rem;
         font-size: .8rem;
     }
 
-    .vertical-accordion-item {
+    .vertical-img {
         flex: 0.3;
     }
 
-    .accordion-active {
+    .vertical-active {
         flex: 2;
     }
 }
 
 @media (max-width: 768px) {
-    .vertical-accordion-item h3 {
+    .vertical-img h3 {
         right: -.9rem;
     }
 
-    .vertical-accordion-item {
+    .vertical-img {
         flex: 0.3;
     }
 

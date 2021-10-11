@@ -1,14 +1,14 @@
-const vertImg = document.querySelectorAll('.vertical-accordion-item')
+const vertImg = document.querySelectorAll('.vertical-img')
 
 vertImg.forEach(vertImg => {
     vertImg.addEventListener('click', () => {
         removeAccordionActive()
-        vertImg.classList.add('accordion-active')
+        vertImg.classList.add('vertical-active')
     })
 })
 
 function removeAccordionActive() {
     vertImg.forEach(vertImg => {
-        vertImg.classList.remove('accordion-active')
+        vertImg.classList.remove('vertical-active')
     })
 }
