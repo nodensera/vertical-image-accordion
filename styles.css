@@ -6,18 +6,26 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: rgb(240, 236, 236);
+    background: linear-gradient( 90deg, rgba(240, 236, 236, 1) 0%, rgba(200,207,205,0.5) 35%, rgba(217, 221, 221, 1) 100%); 
+}
+
+h1, h4 {
+    text-align: center;
+    color: hsl(0, 0%, 21%);
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    width: 85vw;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .vertical-accordion-item {
-    height: 85vh;
+    height: 70vh;
     position: relative;
     flex: 0.3;
     cursor: pointer;
@@ -53,11 +61,26 @@ body {
 }
 
 .accordion-active h3 {
-    top: -1rem;
-    font-size: 3rem;
+    top: 1rem;
+    font-size: 2rem;
     transform: rotate(0deg);
     transition: 300 ease-in;
     left: 3rem;
 }
 
+@media (max-width: 768px) {
+    .vertical-accordion-item h3 {
+        right: -.9rem;
+    }
+}
 
+@media (max-width: 480px) {
+    .accordion-active h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .vertical-accordion-item h3 {
+        right: -.9rem;
+        font-size: .8rem;
+    }
+}
