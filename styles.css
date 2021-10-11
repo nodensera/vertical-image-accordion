@@ -68,12 +68,6 @@ h1, h4 {
     left: 3rem;
 }
 
-@media (max-width: 768px) {
-    .vertical-accordion-item h3 {
-        right: -.9rem;
-    }
-}
-
 @media (max-width: 480px) {
     .accordion-active h3 {
         font-size: 1.5rem !important;
@@ -82,5 +76,27 @@ h1, h4 {
     .vertical-accordion-item h3 {
         right: -.9rem;
         font-size: .8rem;
+    }
+
+    .vertical-accordion-item {
+        flex: 0.3;
+    }
+
+    .accordion-active {
+        flex: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .vertical-accordion-item h3 {
+        right: -.9rem;
+    }
+
+    .vertical-accordion-item {
+        flex: 0.3;
+    }
+
+    .accordion-active {
+        flex: 3;
     }
 }
